@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[Occupation]
+(
+	[Id] INT NOT NULL IDENTITY, 
+    [OccupationName] NVARCHAR(50) NOT NULL PRIMARY KEY, 
+    [Rating] NVARCHAR(50) NOT NULL FOREIGN KEY REFERENCES RATINGS(Rating)
+)

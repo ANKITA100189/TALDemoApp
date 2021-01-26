@@ -1,0 +1,10 @@
+﻿CREATE TABLE [dbo].[Member]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
+	[MemberId] NVARCHAR(10) NOT NULL,
+    [MemberName] NVARCHAR(200) NOT NULL, 
+    [Age] INT NOT NULL, 
+    [Dob] DATE NOT NULL, 
+    [DeathSumInsured] NUMERIC(18, 2) NOT NULL, 
+    [Occupation] NVARCHAR(50) NOT NULL FOREIGN KEY REFERENCES OCCUPATION(OccupationName)
+)

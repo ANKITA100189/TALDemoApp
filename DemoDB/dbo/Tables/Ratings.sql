@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[Ratings]
+(
+	[Id] INT NOT NULL IDENTITY,
+	[Rating] NVARCHAR(50) NOT NULL PRIMARY KEY, 
+	[Factor] NUMERIC(18, 2) NOT NULL
+)
